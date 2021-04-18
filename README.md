@@ -1,12 +1,12 @@
 # Oauth2-Readme
 
-## Basic authentication
+##  Authentication
 
-- Basic authentication: 
+### Basic authentication: 
 + Client access (resource) on server
 + Server request client type auth info (username, password)
 
-- OAuth 1.0 and OAuth 1.0a:
+### OAuth 1.0 and OAuth 1.0a:
 + Client request Authorization Server
 + Client login to server, server grant access for client and redirect to client  with parameter is oauth_verifier:
 + Server Resource call Authorization Server
@@ -38,7 +38,17 @@
 - Refs: 
     + [oauth1.wp-api.](https://oauth1.wp-api.org/docs/basics/Auth-Flow.html)
     + [medium](https://medium.com/apis-with-valentine/oauth-1-0-authorization-flow-using-flickr-api-and-postman-3-legged-oauth-c2a9b46bd8b9)
-## Protocol Flow - three-legged flow
+
+### OAuth 2
+
+#### What is OAuth 2.0
+
+- OAuth is an open-standard authorization protocol or framework that describes how unrelated servers and services can safely allow authenticated access to their assets without actually sharing the initial, related, single logon credential
+
+- OAuth 2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub
+
+- OAuth 2 provides authorization flows for web and desktop applications, and mobile devices.
+#### Protocol Flow - three-legged flow
 
 ``` text
      +--------+                               +---------------+
@@ -59,3 +69,11 @@
      |        |<-(F)--- Protected Resource ---|               |
      +--------+                               +---------------+
 ```
+
+#### OAuth 2
+- Token
+    + Access token
+    + Refresh token
+- Scope
+- Client ID
+- Client Secret
